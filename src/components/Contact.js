@@ -73,7 +73,7 @@ function ContactPage() {
                 <section className="col">Contact Information:
                     <ul>
                         <li>
-                            <a>Phone Number: (503)702-5800</a>
+                            <a href="tel:5037025800">Phone Number: (503)702-5800</a>
                         </li>
                         <li>
                             <a href = "mailto: gates.kyle@hotmail.com">Send Email</a>
