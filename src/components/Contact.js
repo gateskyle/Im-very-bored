@@ -4,7 +4,7 @@ import '../index.css'
 
 function submitAlert(e) {
     e.preventDefault();
-    alert('You submited information for me to stea- i mean look over! (Note: The saving of info does not work yet)')
+    alert('You submitted information for me to stea- i mean look over! (Note: The saving of info does not work yet)')
 }
 
 function ContactPage() {
