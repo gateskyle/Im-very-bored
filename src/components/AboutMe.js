@@ -6,29 +6,6 @@ import ProfilePicture from '../img/profilepicture.jpg'
 function AboutMe() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <section className="navbar-brand">
-                <h1 className="header">Kyle Gates</h1>
-            </section>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-
-                <section className="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul className="navbar-nav ml-auto">
-                        <li className="nav-item">
-                            <a className="nav-link" href="index.html"><h3>About Me</h3></a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="portfolio.html"><h3>Portfolio</h3></a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="contact.html"><h3>Contact</h3></a>
-                        </li>
-                    </ul>
-                </section>
-        </nav>
-
         <section className="container">
 
             <section className="row">
