@@ -1,0 +1,16 @@
+.name {
+    color: red;
+    font-weight: bold;
+}
+.nameLength {
+    color:aqua;
+    font-style: italic;
+}
+.opinion {
+    color: darkmagenta;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nonVowls {
+    color: indigo;
+    font-size: xx-large;
+}
