@@ -9,7 +9,7 @@ function submitAlert(e) {
 
 function ContactPage() {
     return (
-        <div>
+        <>
         <section className="container">
             <section className="row">
                 <section className="col">
@@ -94,7 +94,7 @@ function ContactPage() {
 
             </section>
         </footer>
-    </div>
+    </>
     )
 }
 
