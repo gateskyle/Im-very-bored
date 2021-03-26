@@ -1,6 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css'
+import PDF from '../PDF/Kyle Gates_Resume_2020.pdf'
 
 function ResumePage() {
     return(
@@ -16,11 +17,11 @@ function ResumePage() {
             <section class="row">
                 <section class="col">
 
-                    <iframe title="Resume" src="../PDF/Kyle Gates_Resume_2020.pdf" width="100%" height="500px"></iframe>
+                    <iframe title="Resume" src={PDF} width="100%" height="500px"></iframe>
 
                     <hr/>
 
-                    <a href="../PDF/Kyle Gates_Resume_2020.pdf" download="KyleGatesPDF">Download The PDF</a>
+                    <a href={PDF} download="KyleGatesPDF">Download The PDF</a>
 
                 </section>
                 

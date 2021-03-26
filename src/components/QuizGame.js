@@ -1,6 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css'
+import QuizPic from '../img/quizgame.png'
 
 function QuizGamePage() {
     return (
@@ -16,7 +17,7 @@ function QuizGamePage() {
 
             <section class="row no-gutters">
                 <article class="col">
-                    <img src="../assests/images/screencapture-al0harussia-github-io-Quiz-Game-With-High-Score-2021-01-11-13_26_43.png" alt="The Quiz Game webpage" class="img-fluid"></img>
+                    <img src={QuizPic} alt="The Quiz Game webpage" class="img-fluid"></img>
                 </article>
             </section>
 
@@ -35,7 +36,7 @@ function QuizGamePage() {
                             <a href="https://github.com/Al0haRussia/Quiz-Game-With-High-Score">Repository</a>
                         </li>
                         <li>
-                            <a href="https://al0harussia.github.io/Quiz-Game-With-High-Score/">Webpage</a>
+                            <a href="https://gateskyle.github.io/Quiz-Game-With-High-Score/">Webpage</a>
                         </li>
                     </ul>
                 </article>

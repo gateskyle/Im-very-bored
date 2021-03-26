@@ -15,17 +15,17 @@ function PortfolioPage() {
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
                 <a>Entertainment Lists</a>
-                <a href="./portfolio-htmls/project-1.html" data-slide-to="0"><img src={EntertainmentPic} alt="Entertainment List Project" className="img-thumbnail my-3"></img></a>
+                <a href="/portfolio/enterainment-list" data-slide-to="1"><img src={EntertainmentPic} alt="Entertainment List Project" className="img-thumbnail my-3"></img></a>
               </section>
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
                 <a>Quiz Game</a>
-                <a href="./portfolio-htmls/quiz-game.html" data-slide-to="1"><img src={QuizPic} alt="Quiz Game Project" className="img-thumbnail my-3"></img></a>
+                <a href="/portfolio/quiz-game" data-slide-to="1"><img src={QuizPic} alt="Quiz Game Project" className="img-thumbnail my-3"></img></a>
               </section>
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
                 <a>DnD Helper</a>
-                <a href="./portfolio-htmls/project-2.html" data-slide-to="2"><img src={DnDPic}alt="Project 2" className="img-thumbnail my-3"></img></a>
+                <a href="/portfolio/dnd-helper" data-slide-to="2"><img src={DnDPic}alt="Project 2" className="img-thumbnail my-3"></img></a>
               </section>
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">

@@ -1,6 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css'
+import EntertainmentPic from '../img/entertainment.png'
 
 function ProjectOnePage() {
     return (
@@ -16,7 +17,7 @@ function ProjectOnePage() {
 
             <section class="row no-gutters">
                 <article class="col">
-                    <img src="../img/entertainment.png" alt="The Entertainment List webpage" class="img-fluid"></img>
+                    <img src={EntertainmentPic} alt="The Entertainment List webpage" class="img-fluid"></img>
                 </article>
             </section>
 

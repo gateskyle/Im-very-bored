@@ -65,7 +65,7 @@ function ContactPage() {
                             <a href="https://github.com/Al0haRussia">Github</a>
                         </li>
                         <li>
-                            <a href="./resume.html">Resume</a>
+                            <a href="/contact/resume">Resume</a>
                         </li>
                     </ul>
                 </section>
