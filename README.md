@@ -9,9 +9,6 @@
 
 ### This webpage is a portfolio for Kyle Gates. It includes an about me, contact, and portfolio gallery pages.
 ### It also includes a navbar to each of the pages, and a footer. This page is also mobile friendly, and was coded using HTML, CSS, Bootstrap, and was updated to use React.
-
-### The about me page includes a profile image, two paragraphs(One for education and work history, and one for interest and hobbies), and a section of goals.
-
 ____________________________________________
 
 ### Table of Contents
