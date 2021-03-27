@@ -14,13 +14,13 @@ function App() {
     <Router>
       <div>
         <NavTabs />
-        <Route exact path='Portfolio-In-React/' component={AboutMe} />
-        <Route exact path='Portfolio-In-React/portfolio' component={PortfolioPage} />
-        <Route exact path='Portfolio-In-React/portfolio/enterainment-list' component={ProjectOnePage} />
-        <Route exact path='Portfolio-In-React/portfolio/dnd-helper' component={ProjectTwoPage} />
-        <Route exact path='Portfolio-In-React/portfolio/quiz-game' component={QuizGamePage} />
-        <Route exact path='Portfolio-In-React/contact' component={ContactPage} />
-        <Route exact path='Portfolio-In-React/contact/resume' component={ResumePage} />
+        <Route exact path='/' component={AboutMe} />
+        <Route exact path='/portfolio' component={PortfolioPage} />
+        <Route exact path='/portfolio/enterainment-list' component={ProjectOnePage} />
+        <Route exact path='/portfolio/dnd-helper' component={ProjectTwoPage} />
+        <Route exact path='/portfolio/quiz-game' component={QuizGamePage} />
+        <Route exact path='/contact' component={ContactPage} />
+        <Route exact path='/contact/resume' component={ResumePage} />
       </div>
     </Router>
   )
