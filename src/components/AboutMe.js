@@ -22,8 +22,8 @@ function AboutMe() {
 
                 <article className="col-sm">
                     <p>Hi there, my name is Kyle Gates. I am 22 years old and currently attending the University of Oregon's coding bootcamp. I graduated from Cor Deo Christian Academy in 2017, and also have attended PCC.
-                    One reason i am taking the University of Oregon's coding bootcamp is that I love computers, and have always had a keen interest in coding, which is what I was taking at PCC.
-                    I also took two summers inbetween terms at PCC to work at Fred Meyers as a Gas Attendent, were I was promoted to work the cash register at the fuel station.</p>
+                    One reason I am taking the University of Oregon's coding bootcamp is that I love computers, and have always had a keen interest in coding, which is what I was taking at PCC.
+                    I also took two summers in-between terms at PCC to work at Fred Meyers as a Gas Attendent, were I was promoted to work the cash register at the fuel station.</p>
                     
                 </article>
             </section>
@@ -32,7 +32,7 @@ function AboutMe() {
                 <article className="col-md">
                     <p>Some of my hobbies are video games and skeet shooting. I have been playing videos games since I was young, and was also a reason I am so interested in coding. My hobby of Skeet Shooting developed when
                     I was in high school, were I joined a small league in order to get some electives, and continued to do some more skeet shooting afterwards.<br></br>                    
-                    Some interests of mine are History, specifcally World War II, and military equipment. My interest of history, especially WW2, develop from highschool, were my histroy teachers were very talented and explained history
+                    Some interests of mine are History, specifcally World War II, and military equipment. My interest of history, especially WW2, develop from highschool, were my history teachers were very talented and explained history
                     very well, which made listening about it very intriguing. My interest in military equipment was due to the fact that in times of war, military technology advanced rapidly, which greatly benefitted civllian life after wars.</p>
                 </article>
 
@@ -43,7 +43,7 @@ function AboutMe() {
                     <h1>Goals:</h1>
                     <ul>
                         <li>
-                            <p>To learn as much as i can from this bootcamp.</p>
+                            <p>To learn as much as I can from this bootcamp.</p>
                         </li>
                         <li>
                             <p>To continue to learn code after the bootcamp.</p>
