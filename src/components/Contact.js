@@ -73,7 +73,7 @@ function ContactPage() {
                             <a href="https://github.com/Al0haRussia">Github</a>
                         </li>
                         <li>
-                            <Link to={process.env.PUBLIC_URL + "/contact/resume"} className={location.pathname === process.env.PUBLIC_URL + "/contact/resume"}>
+                            <Link to={"/contact/resume"} className={location.pathname === "/contact/resume"}>
                             Resume
                             </Link>
                         </li>

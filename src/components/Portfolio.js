@@ -17,17 +17,17 @@ function PortfolioPage() {
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
                 <a>Entertainment Lists</a>
-                <Link to={process.env.PUBLIC_URL + "/portfolio/enterainment-list"} className={location.pathname === process.env.PUBLIC_URL + "/portfolio/enterainment-list" ? "nav-link active" : "nav-link"}><img src={EntertainmentPic} alt="Entertainment List Project" className="img-thumbnail my-3"></img></Link>
+                <Link to={"/portfolio/enterainment-list"} className={location.pathname === "/portfolio/enterainment-list" ? "nav-link active" : "nav-link"}><img src={EntertainmentPic} alt="Entertainment List Project" className="img-thumbnail my-3"></img></Link>
               </section>
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
                 <a>Quiz Game</a>
-                <Link to={process.env.PUBLIC_URL + "/portfolio/quiz-game"} className={location.pathname === process.env.PUBLIC_URL + "/portfolio/quiz-game" ? "nav-link active" : "nav-link"}><img src={QuizPic} alt="Quiz Game Project" className="img-thumbnail my-3"></img></Link>
+                <Link to={"/portfolio/quiz-game"} className={location.pathname === "/portfolio/quiz-game" ? "nav-link active" : "nav-link"}><img src={QuizPic} alt="Quiz Game Project" className="img-thumbnail my-3"></img></Link>
               </section>
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
                 <a>DnD Helper</a>
-                <Link to={process.env.PUBLIC_URL + "/portfolio/dnd-helper"} className={location.pathname === process.env.PUBLIC_URL + "/portfolio/dnd-helper" ? "nav-link active" : "nav-link"}><img src={DnDPic}alt="Project 2" className="img-thumbnail my-3"></img></Link>
+                <Link to={"/portfolio/dnd-helper"} className={location.pathname === "/portfolio/dnd-helper" ? "nav-link active" : "nav-link"}><img src={DnDPic}alt="Project 2" className="img-thumbnail my-3"></img></Link>
               </section>
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
