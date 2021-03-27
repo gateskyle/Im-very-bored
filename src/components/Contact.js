@@ -74,7 +74,7 @@ function ContactPage() {
                         </li>
                         <li>
                             <Link to={process.env.PUBLIC_URL + "/contact/resume"} className={location.pathname === process.env.PUBLIC_URL + "/contact/resume" ? "nav-link active" : "nav-link"}>
-                            Resume
+                            <a>Resume</a>
                             </Link>
                         </li>
                     </ul>
