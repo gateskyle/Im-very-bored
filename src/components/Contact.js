@@ -4,7 +4,11 @@ import '../index.css'
 
 function submitAlert(e) {
     e.preventDefault();
-    alert('You submitted information for me to stea- i mean look over! (Note: The saving of info does not work yet)')
+    alert(`You submitted information for me to stea- i mean look over! Note: Does not save information you typed (You entered: 
+        Email: ${document.getElementById('email').value} 
+        Name: ${document.getElementById('personName').value} 
+        Message: ${document.getElementById('message').value}
+    `)
 }
 
 function ContactPage() {
@@ -18,11 +22,12 @@ function ContactPage() {
                 </section>
             </section>
 
+            <form action="/submit" method="post">
             <section className="row no-gutters">
                 <section className="col">
                     <article className="form-group">
-                        <label for="exampleFormControlInput1">Email address</label>
-                        <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <label for="email">Email address</label>
+                        <input type="email" className="form-control" id="email" placeholder="name@example.com">
                         </input>
                     </article>
                 </section>
@@ -31,8 +36,8 @@ function ContactPage() {
             <section className="row no-gutters">
                 <section className="col">
                     <article className="form-group">
-                        <label for="formGroupExampleInput2">First and Last Name</label>
-                        <input type="text" className="form-control" id="formGroupExampleInput2" placeholder="First Name Last Name">
+                        <label for="personName">First and Last Name</label>
+                        <input type="text" className="form-control" id="personName" placeholder="First Name Last Name">
                         </input>
                     </article>
                 </section>
@@ -42,8 +47,8 @@ function ContactPage() {
                 <section className="col">
                     <section className="form-group">
                         <article className="form-group">
-                            <label for="exampleFormControlTextarea1">Message</label>
-                            <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label for="message">Message</label>
+                            <textarea className="form-control" id="message" rows="3"></textarea>
                         </article>
                     </section>
                 </section>
@@ -51,9 +56,10 @@ function ContactPage() {
 
             <section className="row">
                 <section className="col">
-                    <button className="float-right btn btn-primary" type="button" onClick={submitAlert}>Submit</button>
+                    <button className="float-right btn btn-primary" id="submit" type="submit" onClick={submitAlert}>Submit</button>
                 </section>
             </section>
+            </form>
 
             <section className="row">
                 <section className="col">Links To Other Media:
