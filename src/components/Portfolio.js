@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css'
 import EntertainmentPic from '../img/entertainment.png'
@@ -6,6 +7,7 @@ import QuizPic from '../img/quizgame.png'
 import DnDPic from '../img/dnd.png'
 
 function PortfolioPage() {
+  const location = useLocation();
     return (
     <>
         <section className="container">
@@ -15,17 +17,17 @@ function PortfolioPage() {
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
                 <a>Entertainment Lists</a>
-                <a href={process.env.PUBLIC_URL + "/portfolio/enterainment-list"} data-slide-to="1"><img src={EntertainmentPic} alt="Entertainment List Project" className="img-thumbnail my-3"></img></a>
+                <Link to={process.env.PUBLIC_URL + "/portfolio/enterainment-list"} className={location.pathname === process.env.PUBLIC_URL + "/portfolio/enterainment-list" ? "nav-link active" : "nav-link"}><img src={EntertainmentPic} alt="Entertainment List Project" className="img-thumbnail my-3"></img></Link>
               </section>
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
                 <a>Quiz Game</a>
-                <a href={process.env.PUBLIC_URL + "/portfolio/quiz-game"} data-slide-to="1"><img src={QuizPic} alt="Quiz Game Project" className="img-thumbnail my-3"></img></a>
+                <Link to={process.env.PUBLIC_URL + "/portfolio/quiz-game"} className={location.pathname === process.env.PUBLIC_URL + "/portfolio/quiz-game" ? "nav-link active" : "nav-link"}><img src={QuizPic} alt="Quiz Game Project" className="img-thumbnail my-3"></img></Link>
               </section>
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
                 <a>DnD Helper</a>
-                <a href={process.env.PUBLIC_URL + "/portfolio/dnd-helper"} data-slide-to="2"><img src={DnDPic}alt="Project 2" className="img-thumbnail my-3"></img></a>
+                <Link to={process.env.PUBLIC_URL + "/portfolio/dnd-helper"} className={location.pathname === process.env.PUBLIC_URL + "/portfolio/dnd-helper" ? "nav-link active" : "nav-link"}><img src={DnDPic}alt="Project 2" className="img-thumbnail my-3"></img></Link>
               </section>
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
