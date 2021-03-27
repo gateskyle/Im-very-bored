@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css'
 
@@ -12,6 +13,7 @@ function submitAlert(e) {
 }
 
 function ContactPage() {
+    const location = useLocation();
     return (
         <>
         <section className="container">
@@ -71,7 +73,9 @@ function ContactPage() {
                             <a href="https://github.com/Al0haRussia">Github</a>
                         </li>
                         <li>
-                            <a href="/contact/resume">Resume</a>
+                            <Link to={process.env.PUBLIC_URL + "/contact/resume"} className={location.pathname === process.env.PUBLIC_URL + "/contact/resume" ? "nav-link active" : "nav-link"}>
+                            Resume
+                            </Link>
                         </li>
                     </ul>
                 </section>
