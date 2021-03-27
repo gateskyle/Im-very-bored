@@ -16,17 +16,17 @@ function NavBar() {
             <section className="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                        <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
+                        <Link to={process.env.PUBLIC_URL + '/'} className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
                         <h3>About Me</h3>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/portfolio" className={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>
+                        <Link to={process.env.PUBLIC_URL + "/portfolio"} className={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>
                         <h3>Portfolio</h3>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/contact" className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}>
+                        <Link to={process.env.PUBLIC_URL + "/contact"} className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}>
                         <h3>Contact</h3>
                         </Link>
                     </li>
