@@ -16,7 +16,7 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
   },
-  "homepage": "https://gateskyle.github.io",
+  "homepage": "https://gateskyle.github.io/Portfolio-In-React",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
