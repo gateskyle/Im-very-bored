@@ -27,7 +27,7 @@ ____________________________________________
 
 ### Installation
  
-No need to install <br>
+No need to install, follow this <a href="https://gateskyle.github.io/Portfolio-In-React/#/">link.</a> <br>
  
 ____________________________________________
  
@@ -51,7 +51,7 @@ The contact page includes three prompts; your email address, your name, and any 
 
 The portfolio gallery display current works written by Kyle Gates, and will be updated as he progress his coding bootcamp. To access the works, click on the image.
 
-(IMAGE COMING SOON) </br>
+![screencapture-gateskyle-github-io-Portfolio-In-React-2021-03-28-14_07_40](https://user-images.githubusercontent.com/70537665/112768075-046a2700-8fcf-11eb-86dc-9ae6960e2f9f.png) </br>
 
 ____________________________________________
  
