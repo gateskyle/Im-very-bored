@@ -24,7 +24,7 @@ function App() {
         <Route exact path={'/portfolio'} component={PortfolioPage} />
         
         <Route exact path={'/portfolio/enterainment-list'} render={(props) =>   <ProjectPages {...props} 
-        title={`Project: Entertainment Lists`} 
+        title={`Entertainment Lists`} 
         pic={EntertainmentPic} 
         desc={`A group project in which the team created a website to access a database to receive and display information about books, movies, and video games using three different APIs. The languages used were HTML, CSS, JavaScript, and JQuery.`}
         repo={`https://github.com/kurtp23/entertainment-lists`}
@@ -33,7 +33,7 @@ function App() {
         />}/>
 
         <Route exact path={'/portfolio/dnd-helper'} render={(props) => <ProjectPages {...props} 
-        title={`Project: Dungeons And Dragons Helper`} 
+        title={`Dungeons And Dragons Helper`} 
         pic={DnDPic} 
         desc={`A group project in which the team created a website were the user can create a character for the game Dungeons and Dragons. Languages and npms used are: HTML, CSS, Google CSS API, JS, Express npm, MySQL2, and Sequelize`}
         repo={`https://github.com/Tapwater808/DungeonsAndDragonsHelper`}
@@ -42,7 +42,7 @@ function App() {
         />}/>
         
         <Route exact path={'/portfolio/quiz-game'} render={(props) => <ProjectPages {...props} 
-        title={`Project: Quiz Game`} 
+        title={`Quiz Game`} 
         pic={QuizPic} 
         desc={`Quiz Game is a multi-question webpage in which the player must answer coding related questions quickly and correctly to get the highest possible score. It was built using HTML, CSS, and JavaScript and includes two HTML and JavaScript pages; one for displaying the game and one for display the high scores.`}
         repo={`https://github.com/Al0haRussia/Quiz-Game-With-High-Score`}
@@ -51,7 +51,7 @@ function App() {
         />}/>
 
         <Route exact path={'/portfolio/employee-tracker'} render={(props) => <ProjectPages {...props} 
-        title={`Project: Employee Tracker Program`} 
+        title={`Employee Tracker Program`} 
         pic={EmployeeTrackerPic} 
         desc={`The Employee tracker allows you to view, add, and update deparments, roles, and employees. Language used to make this is JavaScript`}
         repo={`https://github.com/gateskyle/Employee-Tracker-Program`}
@@ -60,7 +60,7 @@ function App() {
         />}/>
 
         <Route exact path={'/portfolio/employee-generator'} render={(props) => <ProjectPages {...props} 
-        title={`Project: Employee Website Generator`} 
+        title={`Employee Website Generator`} 
         pic={EmployeeWebsitePic} 
         desc={`This program will generate a website with a list of employees based off of what you input for the questions prompted in the terminal. Languages used to make this are HTML and Javascript`}
         repo={`https://github.com/gateskyle/Team-Member-Profile-Generator`}
@@ -69,7 +69,7 @@ function App() {
         />}/>
 
         <Route exact path={'/portfolio/readme-generator'} render={(props) => <ProjectPages {...props} 
-        title={`Project: README Generator`} 
+        title={`README Generator`} 
         pic={READMEGeneratorPic} 
         desc={`This program is a generator for the README file that allows you to quickly and efficently build a README file with certain guidlines which include: project title, description, installation instructions, usage information, a license, GitHub username, email address, and a interactive Table of Contents. Language used to make the program is Javascript.`}
         repo={`https://github.com/gateskyle/ReadME-Generator`}

@@ -8,7 +8,7 @@ export function ProjectPages(props) {
         <section class="container">
             <section class="row">
                 <section class="col-sm">
-                    <h1 class="font-weight-bold">{props.title}</h1>
+                    <h1 class="font-weight-bold">Project: {props.title}</h1>
                     <hr/>
                 </section>
             </section>
