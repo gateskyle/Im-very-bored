@@ -164,7 +164,7 @@ export function EmployeeTracker() {
                             <a href="https://github.com/gateskyle/Employee-Tracker-Program">Repository</a>
                         </li>
                         <li>
-                            <a>No Webpage, prgoram is used locally</a>
+                            <a>No Webpage, program is used locally</a>
                         </li>
                     </ul>
                 </article>
@@ -206,7 +206,7 @@ export function EmployeeGenerator() {
                             <a href="https://github.com/gateskyle/Team-Member-Profile-Generator">Repository</a>
                         </li>
                         <li>
-                            <a>No Webpage, prgoram is used locally</a>
+                            <a>No Webpage, program is used locally</a>
                         </li>
                     </ul>
                 </article>
@@ -248,7 +248,7 @@ export function READMEGenerator() {
                             <a href="https://github.com/gateskyle/ReadME-Generator">Repository</a>
                         </li>
                         <li>
-                            <a>No Webpage, prgoram is used locally</a>
+                            <a>No Webpage, program is used locally</a>
                         </li>
                     </ul>
                 </article>
