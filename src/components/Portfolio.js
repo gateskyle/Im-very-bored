@@ -5,6 +5,9 @@ import '../index.css'
 import EntertainmentPic from '../img/entertainment.png'
 import QuizPic from '../img/quizgame.png'
 import DnDPic from '../img/dnd.png'
+import EmployeeTrackerPic from '../img/employeetracker.png'
+import EmployeeWebsitePic from '../img/employeewebsitegenerator.gif'
+import READMEGeneratorPic from '../img/readmegen.png'
 
 function PortfolioPage() {
   const location = useLocation();
@@ -31,15 +34,18 @@ function PortfolioPage() {
               </section>
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-                <a href="#lightbox" data-slide-to="3"><img src="https://dummyimage.com/160x120/000000/fff.png&text=Photo+4" alt="dummy" className="img-thumbnail my-3"></img></a>
+                <a>Employee Tracker</a>
+                <Link to={"/portfolio/employee-tracker"} className={location.pathname === "/portfolio/employee-tracker" ? "nav-link active" : "nav-link"}><img src={EmployeeTrackerPic}alt="Employee Tracker" className="img-thumbnail my-3"></img></Link>
               </section>
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-                <a href="#lightbox" data-slide-to="4"><img src="https://dummyimage.com/160x120/000000/fff.png&text=Photo+5" alt="dummy" className="img-thumbnail my-3"></img></a>
+                <a>Employee Generator</a>
+                <Link to={"/portfolio/employee-generator"} className={location.pathname === "/portfolio/employee-generator" ? "nav-link active" : "nav-link"}><img src={EmployeeWebsitePic}alt="Employee Generator" className="img-thumbnail my-3"></img></Link>
               </section>
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-                <a href="#lightbox" data-slide-to="5"><img src="https://dummyimage.com/160x120/000000/fff.png&text=Photo+6" alt="dummy" className="img-thumbnail my-3"></img></a>
+                <a>README Generator</a>
+                <Link to={"/portfolio/readme-generator"} className={location.pathname === "/portfolio/readme-generator" ? "nav-link active" : "nav-link"}><img src={READMEGeneratorPic} alt="Readme Generator" className="img-thumbnail my-3"></img></Link>
               </section>
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
@@ -53,18 +59,6 @@ function PortfolioPage() {
             </section>
 
         </section>
-        
-        <footer className="footer">
-
-            <section className="footercontainer">
-
-                <span className="text-muted">
-                    Kyle Gates © 2020
-                </span>
-
-            </section>
-
-        </footer>
     </>
     )
 }

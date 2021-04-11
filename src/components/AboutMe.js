@@ -56,18 +56,6 @@ function AboutMe() {
             </section>
                 
         </section>
-         
-        <footer className="footer">
-
-            <section className="footercontainer">
-
-                <span className="text-muted">
-                    Kyle Gates © 2020
-                </span>
-
-            </section>
-
-        </footer>
     </>
   );
 }

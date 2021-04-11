@@ -10,6 +10,7 @@ function ResumePage() {
             <section class="row">
                 <section class="col">
                     <h1 class="font-weight-bold">Resume</h1>
+                    <p class="font-weight-bold">(WARNING: Display of resume does not work with mobile devices, must be viewed on desktop or be downloaded)</p>
                     <hr/>
                 </section>
             </section>
@@ -28,17 +29,6 @@ function ResumePage() {
             </section>
         
         </section>
-
-        <footer class="footer">
-
-            <section class="footercontainer">
-
-                <span class="text-muted">
-                    Kyle Gates © 2020
-                </span>
-
-            </section>
-        </footer>
         </>
     )
 }
