@@ -14,6 +14,7 @@ import QuizPic from './img/quizgame.png'
 import EmployeeTrackerPic from './img/employeetracker.png'
 import EmployeeWebsitePic from './img/employeewebsitegenerator.gif'
 import READMEGeneratorPic from './img/readmegen.png'
+import GoogleAPIPic from './img/google-api.png'
 
 function App() {
   return (
@@ -75,6 +76,15 @@ function App() {
         repo={`https://github.com/gateskyle/ReadME-Generator`}
         webpage={``}
         webtitle={`No Webpage, program is used locally`}
+        />}/>
+
+        <Route exact path={'/portfolio/google-api'} render={(props) => <ProjectPages {...props} 
+        title={`Google Books API`} 
+        pic={GoogleAPIPic} 
+        desc={`This webpage is designed to search for books using the Google Books API. You can save a book to a database, and view the saved book or delete it from the database. Languages used include React, Javascript, Express, Axios, Mongoose, and MongoDB`}
+        repo={`https://github.com/gateskyle/Google-Books-Search`}
+        webpage={`https://lit-escarpment-65571.herokuapp.com`}
+        webtitle={`Webpage`}
         />}/>
 
         <Route exact path={'/contact'} component={ContactPage} />

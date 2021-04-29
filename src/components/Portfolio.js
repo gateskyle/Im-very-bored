@@ -8,6 +8,7 @@ import DnDPic from '../img/dnd.png'
 import EmployeeTrackerPic from '../img/employeetracker.png'
 import EmployeeWebsitePic from '../img/employeewebsitegenerator.gif'
 import READMEGeneratorPic from '../img/readmegen.png'
+import GoogleAPIPic from '../img/google-api.png'
 
 function PortfolioPage() {
   const location = useLocation();
@@ -49,7 +50,8 @@ function PortfolioPage() {
               </section>
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
-                <a href="#lightbox" data-slide-to="6"><img src="https://dummyimage.com/160x120/000000/fff.png&text=Photo+7" alt="dummy" className="img-thumbnail my-3"></img></a>
+                <a>Google Books API</a>
+                <Link to={"/portfolio/google-api"} className={location.pathname === "/portfolio/google-api" ? "nav-link active" : "nav-link"}><img src={GoogleAPIPic} alt="Google Books API" className="img-thumbnail my-3"></img></Link>
               </section>
 
               <section className="col-lg-3 col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
