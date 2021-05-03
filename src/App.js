@@ -15,6 +15,7 @@ import EmployeeTrackerPic from './img/employeetracker.png'
 import EmployeeWebsitePic from './img/employeewebsitegenerator.gif'
 import READMEGeneratorPic from './img/readmegen.png'
 import GoogleAPIPic from './img/google-api.png'
+import MoodRingPic from './img/moodCapture.png'
 
 function App() {
   return (
@@ -84,6 +85,15 @@ function App() {
         desc={`This webpage is designed to search for books using the Google Books API. You can save a book to a database, and view the saved book or delete it from the database. Languages used include React, Javascript, Express, Axios, Mongoose, and MongoDB`}
         repo={`https://github.com/gateskyle/Google-Books-Search`}
         webpage={`https://lit-escarpment-65571.herokuapp.com`}
+        webtitle={`Webpage`}
+        />}/>
+
+        <Route exact path={'/portfolio/mood-ring'} render={(props) => <ProjectPages {...props} 
+        title={`Mood Ring`} 
+        pic={MoodRingPic} 
+        desc={`This webpage was a team project that used facial recongition to detect a user's mood, display a remedy based o nthe mood, and save the mood to a user profile. Languages used include: React, JavaScript, HTML, CSS, Axios, Bootstrap, Express, If-env, MongoDB, Heroku, React-bootstrap, React-google-login, React-router-dom, Facial Recognition Technology and Live Webcam `}
+        repo={`https://github.com/haywah27/mood-ring`}
+        webpage={`https://moody-ring.herokuapp.com/`}
         webtitle={`Webpage`}
         />}/>
 
