@@ -1,15 +1,20 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import emailjs from 'emailjs-com';
+import{ init } from 'emailjs-com';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../index.css'
+import '../index.css';
+init("user_viGFYpYQLNH6XXHT2hsns");
 
 function submitAlert(e) {
     e.preventDefault();
-    alert(`You submitted information for me to stea- i mean look over! Note: Does not save information you typed (You entered: 
-        Email: ${document.getElementById('email').value} 
-        Name: ${document.getElementById('personName').value} 
-        Message: ${document.getElementById('message').value}
-    `)
+    emailjs.send("service_t39ak2g", "template_qtcdkpn", {
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value,
+        personName: document.getElementById('personName').value,
+    }).then(
+        alert('Information has been sent.')
+    );
 }
 
 function ContactPage() {
