@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio-In-React/static/css/main.d78b554c.chunk.css",
-    "main.js": "/Portfolio-In-React/static/js/main.d960cd2e.chunk.js",
-    "main.js.map": "/Portfolio-In-React/static/js/main.d960cd2e.chunk.js.map",
+    "main.css": "/Portfolio-In-React/static/css/main.e0ce347c.chunk.css",
+    "main.js": "/Portfolio-In-React/static/js/main.5d236341.chunk.js",
+    "main.js.map": "/Portfolio-In-React/static/js/main.5d236341.chunk.js.map",
     "runtime-main.js": "/Portfolio-In-React/static/js/runtime-main.235ef78e.js",
     "runtime-main.js.map": "/Portfolio-In-React/static/js/runtime-main.235ef78e.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/Portfolio-In-React/static/css/2.4c97ca4f.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.8a442e4e.chunk.js.map": "/Portfolio-In-React/static/js/2.8a442e4e.chunk.js.map",
     "index.html": "/Portfolio-In-React/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/Portfolio-In-React/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.d78b554c.chunk.css.map": "/Portfolio-In-React/static/css/main.d78b554c.chunk.css.map",
+    "static/css/main.e0ce347c.chunk.css.map": "/Portfolio-In-React/static/css/main.e0ce347c.chunk.css.map",
     "static/js/2.8a442e4e.chunk.js.LICENSE.txt": "/Portfolio-In-React/static/js/2.8a442e4e.chunk.js.LICENSE.txt",
     "static/media/Kyle Gates_Resume_2020.db601098.pdf": "/Portfolio-In-React/static/media/Kyle Gates_Resume_2020.db601098.pdf",
     "static/media/index.css": "/Portfolio-In-React/static/media/background.5a41f50e.jpg",
@@ -27,7 +27,7 @@
     "static/js/runtime-main.235ef78e.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.8a442e4e.chunk.js",
-    "static/css/main.d78b554c.chunk.css",
-    "static/js/main.d960cd2e.chunk.js"
+    "static/css/main.e0ce347c.chunk.css",
+    "static/js/main.5d236341.chunk.js"
   ]
 }
