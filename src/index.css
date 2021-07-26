@@ -32,6 +32,11 @@ img {
     margin: 0;
     }
 
+.aboutMePhoto {
+    height: 400px;
+    width: 300px;
+    }
+
 .container {
     position: inherit;
     border-radius: 15px 15px 15px 15px;
@@ -41,8 +46,21 @@ img {
     padding-bottom: 25px;
     width: 800px;
     }
+    
+@media only screen and (max-width: 991px) {
+    .aboutMePhoto {
+        padding-right: 10px;
+        height: 400px;
+        width: 300px;
+        }
+    }
 
 @media only screen and (max-width: 575px) {
+.aboutMePhoto {
+    padding-right: 10px;
+    height: 300px;
+    width: 400px;
+    }
 .container {
     width: 400px;
     }
