@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Portfolio-In-React/static/css/main.e0ce347c.chunk.css",
+    "main.js": "/Portfolio-In-React/static/js/main.5d236341.chunk.js",
+    "main.js.map": "/Portfolio-In-React/static/js/main.5d236341.chunk.js.map",
+    "runtime-main.js": "/Portfolio-In-React/static/js/runtime-main.235ef78e.js",
+    "runtime-main.js.map": "/Portfolio-In-React/static/js/runtime-main.235ef78e.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/Portfolio-In-React/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.8a442e4e.chunk.js": "/Portfolio-In-React/static/js/2.8a442e4e.chunk.js",
+    "static/js/2.8a442e4e.chunk.js.map": "/Portfolio-In-React/static/js/2.8a442e4e.chunk.js.map",
+    "index.html": "/Portfolio-In-React/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/Portfolio-In-React/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.e0ce347c.chunk.css.map": "/Portfolio-In-React/static/css/main.e0ce347c.chunk.css.map",
+    "static/js/2.8a442e4e.chunk.js.LICENSE.txt": "/Portfolio-In-React/static/js/2.8a442e4e.chunk.js.LICENSE.txt",
+    "static/media/Kyle Gates_Resume_2020.db601098.pdf": "/Portfolio-In-React/static/media/Kyle Gates_Resume_2020.db601098.pdf",
+    "static/media/index.css": "/Portfolio-In-React/static/media/background.5a41f50e.jpg",
+    "static/media/dnd.fd7fb42f.png": "/Portfolio-In-React/static/media/dnd.fd7fb42f.png",
+    "static/media/employeewebsitegenerator.d9a37893.gif": "/Portfolio-In-React/static/media/employeewebsitegenerator.d9a37893.gif",
+    "static/media/entertainment.0ee8441b.png": "/Portfolio-In-React/static/media/entertainment.0ee8441b.png",
+    "static/media/google-api.2d34f75b.png": "/Portfolio-In-React/static/media/google-api.2d34f75b.png",
+    "static/media/moodCapture.454b4333.png": "/Portfolio-In-React/static/media/moodCapture.454b4333.png",
+    "static/media/profilepicture.2eb0c174.jpg": "/Portfolio-In-React/static/media/profilepicture.2eb0c174.jpg",
+    "static/media/quizgame.da843cbe.png": "/Portfolio-In-React/static/media/quizgame.da843cbe.png",
+    "static/media/readmegen.522b0550.png": "/Portfolio-In-React/static/media/readmegen.522b0550.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.235ef78e.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.8a442e4e.chunk.js",
+    "static/css/main.e0ce347c.chunk.css",
+    "static/js/main.5d236341.chunk.js"
+  ]
+}

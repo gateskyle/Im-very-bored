@@ -75,7 +75,7 @@ function ContactPage() {
                             <a href="https://www.linkedin.com/in/kyle-gates-62a131184/">Linkedin</a>
                         </li>
                         <li>
-                            <a href="https://github.com/Al0haRussia">Github</a>
+                            <a href="https://github.com/gateskyle">Github</a>
                         </li>
                         <li>
                             <Link to={"/contact/resume"} className={location.pathname === "/contact/resume"}>
