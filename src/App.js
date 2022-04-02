@@ -25,7 +25,7 @@ function App() {
         <Route exact path={'/'} component={AboutMe} />
         <Route exact path={'/portfolio'} component={PortfolioPage} />
         
-        <Route exact path={'/portfolio/enterainment-list'} render={(props) =>   <ProjectPages {...props} 
+        <Route exact path={'/portfolio/enterainment-list'} render={(props) => <ProjectPages {...props} 
         title={`Entertainment Lists`} 
         pic={EntertainmentPic} 
         desc={`A group project in which the team created a website to access a database to receive and display information about books, movies, and video games using three different APIs. The languages used were HTML, CSS, JavaScript, and JQuery.`}
