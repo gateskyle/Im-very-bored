@@ -12,9 +12,13 @@ function submitAlert(e) {
         email: document.getElementById('email').value,
         message: document.getElementById('message').value,
         personName: document.getElementById('personName').value,
-    }).then(
-        alert('Information has been sent.')
-    );
+    }).then(function(mail) {
+        if (mail.text === "OK") {
+            alert("You have successfully sent the information")
+        } else {
+            alert("You have encountered an error, pelse use a different method for contact")
+        }
+    });
 }
 
 function ContactPage() {
@@ -40,7 +44,7 @@ function ContactPage() {
                 </section>
             </section>
 
-            <section className="row no-gutters">
+            <section className="row no-gutters" style={{ marginTop: 5}}>
                 <section className="col">
                     <article className="form-group">
                         <label for="personName">First and Last Name</label>
@@ -50,7 +54,7 @@ function ContactPage() {
                 </section>
             </section>
 
-            <section className="row no-gutters">
+            <section className="row no-gutters" style={{ marginTop: 5}}>
                 <section className="col">
                     <section className="form-group">
                         <article className="form-group">
@@ -63,12 +67,15 @@ function ContactPage() {
 
             <section className="row">
                 <section className="col">
-                    <button className="float-right btn btn-primary" id="submit" type="submit" onClick={submitAlert}>Submit</button>
+                    <button className="float-right btn btn-primary" id="submit" type="submit" style={{ marginTop: 5}} onClick={submitAlert}>Submit</button>
+                    <section className="errorMessage" id="errorMessage" style={{ marginTop: 5}}>
+                        
+                    </section>
                 </section>
             </section>
             </form>
 
-            <section className="row">
+            <section className="row" style={{ marginTop: 5}}>
                 <section className="col">Links To Other Media:
                     <ul>
                         <li>
