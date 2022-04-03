@@ -20,7 +20,7 @@ function submitAlert(e) {
             document.getElementById("errorMessage").innerHTML = '<div class="alert alert-success" role="alert"> <strong>You have successfully sent your information. Thank you! </strong> </div>'
         } else {
             document.getElementById("errorMessage").innerHTML = '<div class="alert alert-danger" role="alert"> <strong>You have encountered an error, please ensure no fields were blank or use a different method for contact</strong> </div>'
-            emailjs.send("service_t39ak2g", "template_qtcdkpn", {
+            emailjs.send("service_t39ak2g", "template_fbojyvx", {
                 errorAlert:"An error has occured when someone attempted to send their information",
                 email: document.getElementById('email').value,
                 message: document.getElementById('message').value,
