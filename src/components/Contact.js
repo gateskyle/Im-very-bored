@@ -30,6 +30,7 @@ function submitAlert(e) {
         }).done(function() {
             document.getElementById("errorMessage").innerHTML = '<div class="alert alert-success" role="alert"> <strong>You have successfully sent your information. Thank you!</strong> </div>'
         }).fail(function(error) {
+            console.log(error)
             document.getElementById("errorMessage").innerHTML = '<div class="alert alert-danger" role="alert"> <strong>You have encountered an error, please ensure no fields were blank or use a different method for contact</strong> </div>'
         });
     } else {
