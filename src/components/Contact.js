@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import emailjs from 'emailjs-com';
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import{ init } from 'emailjs-com';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
@@ -8,30 +8,31 @@ init("user_viGFYpYQLNH6XXHT2hsns");
 
 function submitAlert(e) {
     e.preventDefault();
-    emailjs.send("service_t39ak2g", "template_qtcdkpn", {
-        email: document.getElementById('email').value,
-        message: document.getElementById('message').value,
-        personName: document.getElementById('personName').value,
-    }).then(function(mail) {
-        console.log(mail)
-        if (mail.text === "OK" & document.getElementById('email').value !== "" & document.getElementById('message').value !== "" & document.getElementById('personName').value !== "") {
-            console.log("You have successfully sent the information")
-            console.log(document.getElementById("errorMessage"))
-            document.getElementById("errorMessage").innerHTML = '<div class="alert alert-success" role="alert"> <strong>You have successfully sent your information. Thank you! </strong> </div>'
-        } else {
-            document.getElementById("errorMessage").innerHTML = '<div class="alert alert-danger" role="alert"> <strong>You have encountered an error, please ensure no fields were blank or use a different method for contact</strong> </div>'
-            emailjs.send("service_t39ak2g", "template_fbojyvx", {
-                errorAlert:"An error has occured when someone attempted to send their information",
-                email: document.getElementById('email').value,
-                message: document.getElementById('message').value,
-                personName: document.getElementById('personName').value,
-                errorStatus: mail.status,
-                errorText: mail.text
-            })
-            console.log("You have encountered an error, please ensure no fields were blank or use a different method for contact")
-        }
-    });
-}
+
+    const emailValue = document.getElementById('email').value;
+    const messageValue = document.getElementById('message').value;
+    const personNameValue = document.getElementById('personName').value;
+
+    if (emailValue !== "" & messageValue !== "" & personNameValue !== "") {
+    emailjs.send("service_test", "template_qtcdkpn", {
+        email: emailValue,
+        message: messageValue,
+        personName: personNameValue
+    }).then(
+        document.getElementById("errorMessage").innerHTML = '<div class="alert alert-danger" role="alert"> <strong>You have encountered an error, please ensure no fields were blank or use a different method for contact</strong> </div>'
+    ).catch(e.message,
+        emailjs.send("service_hwjcz8w", "template_fbojyvx", {
+            errorAlert:"An error has occured when someone attempted to send their information",
+            email: emailValue,
+            message: messageValue,
+            personName: personNameValue,
+            errorStatus: e.message
+        })
+        )
+    } else {
+    document.getElementById("errorMessage").innerHTML = '<div class="alert alert-danger" role="alert"> <strong>You have encountered an error, please ensure no fields were blank or use a different method for contact</strong> </div>'
+    }
+} 
 
 function ContactPage() {
     const location = useLocation();
