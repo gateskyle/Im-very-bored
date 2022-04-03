@@ -13,10 +13,22 @@ function submitAlert(e) {
         message: document.getElementById('message').value,
         personName: document.getElementById('personName').value,
     }).then(function(mail) {
-        if (mail.text === "OK") {
-            alert("You have successfully sent the information")
+        console.log(mail)
+        if (mail.text === "OK" & document.getElementById('email').value !== "" & document.getElementById('message').value !== "" & document.getElementById('personName').value !== "") {
+            console.log("You have successfully sent the information")
+            console.log(document.getElementById("errorMessage"))
+            document.getElementById("errorMessage").innerHTML = '<div class="alert alert-success" role="alert"> <strong>You have successfully sent your information. Thank you! </strong> </div>'
         } else {
-            alert("You have encountered an error, pelse use a different method for contact")
+            document.getElementById("errorMessage").innerHTML = '<div class="alert alert-danger" role="alert"> <strong>You have encountered an error, please ensure no fields were blank or use a different method for contact</strong> </div>'
+            emailjs.send("service_t39ak2g", "template_qtcdkpn", {
+                errorAlert:"An error has occured when someone attempted to send their information",
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value,
+                personName: document.getElementById('personName').value,
+                errorStatus: mail.status,
+                errorText: mail.text
+            })
+            console.log("You have encountered an error, please ensure no fields were blank or use a different method for contact")
         }
     });
 }
@@ -30,6 +42,7 @@ function ContactPage() {
                 <section className="col">
                     <h1 className="font-weight-bold">Contact</h1>
                     <hr/>
+                    <section className="errorMessage" id="errorMessage" style={{ marginTop: 5}} />
                 </section>
             </section>
 
@@ -68,9 +81,6 @@ function ContactPage() {
             <section className="row">
                 <section className="col">
                     <button className="float-right btn btn-primary" id="submit" type="submit" style={{ marginTop: 5}} onClick={submitAlert}>Submit</button>
-                    <section className="errorMessage" id="errorMessage" style={{ marginTop: 5}}>
-                        
-                    </section>
                 </section>
             </section>
             </form>
