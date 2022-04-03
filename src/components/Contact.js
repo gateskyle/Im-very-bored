@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
@@ -14,24 +14,25 @@ function submitAlert(e) {
     const personNameValue = document.getElementById('personName').value;
 
     if (emailValue !== "" & messageValue !== "" & personNameValue !== "") {
-    emailjs.send("service_test", "template_qtcdkpn", {
+    emailjs.send("service_hwjcz8w", "template_qtcdkpn", {
         email: emailValue,
         message: messageValue,
         personName: personNameValue
     }).then(
-        document.getElementById("errorMessage").innerHTML = '<div class="alert alert-danger" role="alert"> <strong>You have encountered an error, please ensure no fields were blank or use a different method for contact</strong> </div>'
-    ).catch(e.message,
+        document.getElementById("errorMessage").innerHTML = '<div class="alert alert-success" role="alert"> <strong>You have successfully sent your information. Thank you!</strong> </div>'
+    ).catch(
+        document.getElementById("errorMessage").innerHTML = '<div class="alert alert-danger" role="alert"> <strong>You have encountered an error, please ensure no fields were blank or use a different method for contact</strong> </div>',
         emailjs.send("service_hwjcz8w", "template_fbojyvx", {
             errorAlert:"An error has occured when someone attempted to send their information",
             email: emailValue,
             message: messageValue,
             personName: personNameValue,
-            errorStatus: e.message
         })
-        )
+    )
     } else {
     document.getElementById("errorMessage").innerHTML = '<div class="alert alert-danger" role="alert"> <strong>You have encountered an error, please ensure no fields were blank or use a different method for contact</strong> </div>'
     }
+    
 } 
 
 function ContactPage() {
